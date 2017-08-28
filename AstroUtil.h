@@ -8,4 +8,5 @@ class CAstroUtil
 	float RightAscension, Declination;
 
 	void SetRightAscension(int, int, int);
+	void SetDeclination(int, int, int, char);
 };

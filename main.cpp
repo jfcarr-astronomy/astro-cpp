@@ -6,6 +6,9 @@ main()
 {
 	CAstroUtil *myAstroUtil = new CAstroUtil();
 
-	myAstroUtil->SetRightAscension(3, 32, 12);
+	myAstroUtil->SetRightAscension(3, 27, 30);
 	cout << "Right Ascension is " << myAstroUtil->RightAscension << endl;
+
+	myAstroUtil->SetDeclination(36, 3, 27, 'N');
+	cout << "Declination is " << myAstroUtil->Declination << endl;
 }
