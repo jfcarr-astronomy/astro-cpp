@@ -3,6 +3,10 @@ default:
 	@echo " build"
 	@echo " clean"
 
+run: build
+	@echo ""
+	@./astroutil
+
 build: astroutil
 
 astroutil: AstroUtil.o main.o
