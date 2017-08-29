@@ -88,3 +88,14 @@ void CAstroUtil::SetTime(int hours, int minutes)
 {
 	Time = float(hours) + (float(minutes) / 60);
 }
+
+double CAstroUtil::GetDaysFromEpoch()
+{
+	struct tm startTimeStruct = {0, 0, 0, 1, 1, 100}; // January 1, 2000
+	time_t startTime = mktime(&startTimeStruct);
+	time_t endTime = time(0);
+
+	double daysElapsed = difftime(endTime, startTime) / (60 * 60 * 24);
+
+	return daysElapsed;
+}

@@ -15,6 +15,7 @@ class CAstroUtil
 	float GetLatitude();
 	float GetLongitude();
 	float GetTime();
+	double GetDaysFromEpoch();
 
 	void SetRightAscension(int hours, int minutes, int seconds);
 	void SetDeclination(int degrees, int minutes, int seconds, char cardinal);

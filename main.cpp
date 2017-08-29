@@ -23,6 +23,8 @@ main()
 
 		myAstroUtil.SetTime(16, 30);
 		cout << "Time is " << myAstroUtil.GetTime() << endl;
+
+		cout << "Days from epoch " << myAstroUtil.GetDaysFromEpoch() << endl;
 	}
 	catch (exception &e)
 	{
