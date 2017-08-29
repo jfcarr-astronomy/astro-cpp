@@ -4,10 +4,17 @@ using namespace std;
 
 class CAstroUtil
 {
-  public:
+  private:
 	float RightAscension, Declination;
 	float Latitude, Longitude;
 	float Time;
+
+  public:
+	float GetRightAscension();
+	float GetDeclination();
+	float GetLatitude();
+	float GetLongitude();
+	float GetTime();
 
 	void SetRightAscension(int hours, int minutes, int seconds);
 	void SetDeclination(int degrees, int minutes, int seconds, char cardinal);

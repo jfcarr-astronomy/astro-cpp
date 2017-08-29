@@ -1,5 +1,30 @@
 #include "AstroUtil.h"
 
+float CAstroUtil::GetRightAscension()
+{
+	return RightAscension;
+}
+
+float CAstroUtil::GetDeclination()
+{
+	return Declination;
+}
+
+float CAstroUtil::GetLatitude()
+{
+	return Latitude;
+}
+
+float CAstroUtil::GetLongitude()
+{
+	return Longitude;
+}
+
+float CAstroUtil::GetTime()
+{
+	return Time;
+}
+
 void CAstroUtil::SetRightAscension(int hours, int minutes, int seconds)
 {
 	RightAscension = ((float)hours + ((float)minutes / 60) + (float(seconds) / 60 / 60)) * 15;

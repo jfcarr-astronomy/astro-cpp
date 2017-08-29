@@ -10,19 +10,19 @@ main()
 		CAstroUtil myAstroUtil;
 
 		myAstroUtil.SetRightAscension(3, 27, 30);
-		cout << "Right Ascension is " << myAstroUtil.RightAscension << endl;
+		cout << "Right Ascension is " << myAstroUtil.GetRightAscension() << endl;
 
 		myAstroUtil.SetDeclination(36, 3, 27, 'N');
-		cout << "Declination is " << myAstroUtil.Declination << endl;
+		cout << "Declination is " << myAstroUtil.GetDeclination() << endl;
 
 		myAstroUtil.SetLatitude(39, 22, 4, 'N');
-		cout << "Latitude is " << myAstroUtil.Latitude << endl;
+		cout << "Latitude is " << myAstroUtil.GetLatitude() << endl;
 
 		myAstroUtil.SetLongitude(84, 12, 5, 'W');
-		cout << "Longitude is " << myAstroUtil.Longitude << endl;
+		cout << "Longitude is " << myAstroUtil.GetLongitude() << endl;
 
 		myAstroUtil.SetTime(16, 30);
-		cout << "Time is " << myAstroUtil.Time << endl;
+		cout << "Time is " << myAstroUtil.GetTime() << endl;
 	}
 	catch (exception &e)
 	{
