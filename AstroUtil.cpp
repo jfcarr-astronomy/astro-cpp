@@ -58,3 +58,8 @@ void CAstroUtil::SetLongitude(int degrees, int minutes, int seconds, char cardin
 		break;
 	}
 }
+
+void CAstroUtil::SetTime(int hours, int minutes)
+{
+	Time = float(hours) + (float(minutes) / 60);
+}

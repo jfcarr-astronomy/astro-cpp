@@ -20,6 +20,9 @@ main()
 
 		myAstroUtil.SetLongitude(84, 12, 5, 'W');
 		cout << "Longitude is " << myAstroUtil.Longitude << endl;
+
+		myAstroUtil.SetTime(16, 30);
+		cout << "Time is " << myAstroUtil.Time << endl;
 	}
 	catch (exception &e)
 	{
