@@ -1,5 +1,6 @@
 default:
 	@echo "Targets:"
+	@echo " run"
 	@echo " build"
 	@echo " clean"
 
