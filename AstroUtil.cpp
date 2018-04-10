@@ -27,7 +27,7 @@ float CAstroUtil::GetTime()
 
 void CAstroUtil::SetRightAscension(int hours, int minutes, int seconds)
 {
-	RightAscension = ((float)hours + ((float)minutes / 60) + (float(seconds) / 60 / 60)) * 15;
+	RightAscension = ((float)hours * 15) + ((float)minutes / 4) + ((float)seconds / 240);
 }
 
 void CAstroUtil::SetDeclination(int degrees, int minutes, int seconds, char cardinal)
